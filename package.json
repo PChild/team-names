@@ -1,5 +1,6 @@
 {
   "name": "team-names",
+  "homepage": "https://pchild.github.io/team-names/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "@mui/material": "^5.10.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "gh-pages": "^4.0.0",
     "material-react-table": "^0.36.2",
     "react": "latest",
     "react-dom": "latest",
@@ -17,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
